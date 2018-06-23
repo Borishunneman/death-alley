@@ -1,0 +1,13 @@
+clusters:
+- alias: hasura
+  config: {}
+  data: null
+- alias: M-cluster
+  config:
+    configmap: controller-conf
+    namespace: hasura
+  data: null
+  kubeContext: seasoning29
+  name: seasoning29
+defaultCluster: ""
+isQuickStart: ""
