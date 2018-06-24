@@ -5,9 +5,9 @@ items:
   metadata:
     creationTimestamp: null
     labels:
-      app: '{{ microservice.name }}'
+      app: api
       hasuraService: custom
-    name: '{{ microservice.name }}'
+    name: api
     namespace: '{{ cluster.metadata.namespaces.user }}'
   spec:
     replicas: 1
@@ -16,12 +16,12 @@ items:
       metadata:
         creationTimestamp: null
         labels:
-          app: '{{ microservice.name }}'
+          app: api
       spec:
         containers:
         - image: hasura/hello-world:latest
           imagePullPolicy: IfNotPresent
-          name: '{{ microservice.name }}'
+          name: api
           ports:
           - containerPort: 8080
             protocol: TCP
@@ -44,7 +44,7 @@ items:
       protocol: TCP
       targetPort: 8080
     selector:
-      app: '{{ microservice.name }}'
+      app: api
     type: ClusterIP
   status:
     loadBalancer: {}

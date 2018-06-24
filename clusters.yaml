@@ -2,18 +2,5 @@ clusters:
 - alias: M-cluster
   data: null
   infra:
-    nodes:
-    - labels:
-        app: postgres
-      type: s-1vcpu-2gb
-    provider: digital-ocean
-    region: ams3
-    version: v1
-    volumes:
-    - name: postgres
-      size: 10
-    - name: filestore
-      size: 1
-    - name: sessionstore
-      size: 1
+    provider: pro
 version: v1

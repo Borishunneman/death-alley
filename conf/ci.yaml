@@ -12,14 +12,10 @@ remotes:
   # - name: deployment-name
   #   namespace: deployment-namespace
   #   containers:
-
-
-
   #   - name: container-name:
   #     dockerBuild:
   #       contextPath: microservices/app
   #       dockerfilePath: microservices/app/Dockerfile
-
 
   # Default remote to push code and configuration
 - name: '{{ cluster.name }}'      # DO NOT edit this line
@@ -31,4 +27,5 @@ remotes:
         dockerfilePath: microservices/api/Dockerfile
       name: api
     name: api
-    namespace: '{{ cluster.metadata.namespaces.user }}'
+    nameSpace: '{{ cluster.metadata.namespaces.user }}'
+  
