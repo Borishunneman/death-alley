@@ -216,4 +216,3 @@
       namespace: {{ cluster.metadata.namespaces.user }}
       path: /
       port: 80
-  subdomain: www
