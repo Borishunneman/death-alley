@@ -7,6 +7,12 @@
     conf:
       account: {{ cluster.name }}
 
+- deathalley.com:
+  ssl:
+    conf:
+      account: borishunneman@gmail.com
+    type: LetsEncrypt
+
 # Point your own domain to the IP of the cluster and add the domain here
 # Example configuration for domain with free SSL certs from LetsEncypt
 #
