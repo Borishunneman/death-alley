@@ -208,7 +208,7 @@
       port: 80
     corsPolicy: allow_all
 
-- paths: www
+  paths: www
   - corsPolicy: allow_all
     path: /
     upstreamService:
