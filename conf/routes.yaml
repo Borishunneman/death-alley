@@ -207,12 +207,3 @@
       path: /
       port: 80
     corsPolicy: allow_all
-
-  paths: www
-  - corsPolicy: allow_all
-    path: /
-    upstreamService:
-      name: www
-      namespace: {{ cluster.metadata.namespaces.user }}
-      path: /
-      port: 80
