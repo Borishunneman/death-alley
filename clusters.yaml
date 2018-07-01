@@ -1,5 +1,5 @@
 clusters:
-- alias: m-cluster
+- alias: M-cluster
   data: null
   infra:
     nodes:
