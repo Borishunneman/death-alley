@@ -7,10 +7,10 @@
     conf:
       account: {{ cluster.name }}
 
-- deathalley.com:
+- www.deathalley.nl:
   ssl:
     conf:
-      account: borishunneman@gmail.com
+      account: {{ cluster.name}}
     type: LetsEncrypt
 
 # Point your own domain to the IP of the cluster and add the domain here
