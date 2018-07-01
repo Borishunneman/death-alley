@@ -7,7 +7,7 @@
     conf:
       account: {{ cluster.name }}
 
-- www.deathalley.nl:
+- domain: www.deathalley.nl
   ssl:
     conf:
       account: {{ cluster.name}}
