@@ -165,7 +165,7 @@
 #       (Advanced) Additional nginx directives that need to go into the
 #       location block
 
-- subdomain:
+- subdomain: auth
   paths:
   - path: /
     upstreamService:
@@ -175,7 +175,7 @@
       port: 80
     corsPolicy: allow_all
 
-- subdomain:
+- subdomain: data
   paths:
   - path: /
     upstreamService:
@@ -185,7 +185,7 @@
       port: 80
     corsPolicy: allow_all
 
-- subdomain:
+- subdomain: filestore
   paths:
   - path: /
     upstreamService:
@@ -198,7 +198,7 @@
       proxy_request_buffering off;
       client_max_body_size 100M;
 
-- subdomain:
+- subdomain: notify
   paths:
   - path: /
     upstreamService:
